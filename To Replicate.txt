@@ -1,0 +1,14 @@
+Install truffle.
+truffle unbox react
+In the contract folder add you own contract
+Also add a new migration script for your contract
+truffle develop
+compile
+migrate
+To store a certificate -->
+let instance =await Certification.deployed()
+instance
+let result=instance.storeCertificate("1","ram","BMU","BC",160198)
+
+To verify a certificate -->
+result=instance.verifyCertificate("1")
