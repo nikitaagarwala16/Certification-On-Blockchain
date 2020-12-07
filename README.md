@@ -1,7 +1,7 @@
 # Certification-On-Blockchain
 >This smart contract enables us make an effective anti-forge mechanism,so that one can tackle fake certificates. In order to solve the problem of counterfeiting certificates, the digital certificate system based on blockchain technology is implemented. By the unmodifiable property of blockchain, the digital certificate with anti-counterfeit and verifiability could be made. 
 
-##Components of the Smart Contract
+## Components of the Smart Contract
 
 Some of the components are :-
 
@@ -12,9 +12,9 @@ Some of the components are :-
 | storeCertificate() | Verifies all the input details and stores these details in blockchain under certificate structure. |
 | verifyCertificate() | Checks if the certificate with the given ID is present in blockchain or not. |
 
-##Team Members
+## Team Members
 
-*Gaurav Gupta
-*Tanmay Sagar
-*Vibhav Airan
-*Nikita Agarwala
+* Gaurav Gupta
+* Tanmay Sagar
+* Vibhav Airan
+* Nikita Agarwala
