@@ -12,3 +12,17 @@ let result=instance.storeCertificate("1","ram","BMU","BC",160198)
 
 To verify a certificate -->
 result=instance.verifyCertificate("1")
+
+
+For impCertification-->
+
+truffle develop
+compile
+migrate
+let instance =await CertificationFactory.deployed()
+let result =instance.newCertificates("BMU")
+result= instance.registeredOrg("BMU")
+'0xB8e1c316186Eb9Fcb81239f3Cbb259590dABAC26'
+instance=await impCertification.at('0xB8e1c316186Eb9Fcb81239f3Cbb259590dABAC26')
+result=instance.storeCertificate("1700C203","xyz","BLC",101122)
+result=instance.verifyCertificate("1700C203") 
