@@ -1,5 +1,5 @@
 # Certification-On-Blockchain
->This smart contract enables us make an effective anti-forge mechanism,so that one can tackle fake certificates. In order to solve the problem of counterfeiting certificates, the digital certificate system based on blockchain technology is implemented. By the unmodifiable property of blockchain, the digital certificate with anti-counterfeit and verifiability could be made. 
+>This smart contract enables us make an effective anti-forge mechanism,so that one can tackle fake certificates. In order to solve the problem of counterfeiting certificates, the digital certificate system based on blockchain technology is implemented. By the unmodifiable property of blockchain, the digital certificate with anti-counterfeit and verifiability could be made.
 
 ## Components of the Smart Contract
 
@@ -11,6 +11,10 @@ Some of the components are :-
 | converttobytes() | Converts any given string into 32 bytes |
 | storeCertificate() | Verifies all the input details and stores these details in blockchain under certificate structure. |
 | verifyCertificate() | Checks if the certificate with the given ID is present in blockchain or not. |
+| getCertificate() | Gets all the details of a certificate related to a given input ID.  |
+
+## Updates
+* Added a factory contract and made some changes in certificates smart contract. The new contracts are impCertification.sol and CertificationFactory.sol
 
 ## Team Members
 

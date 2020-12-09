@@ -49,11 +49,18 @@ contract impCertification {
         emit certificateGenerated(byte_id);
         }
 
-    function verifyCertificate(string memory _id) public view returns(string memory, string memory, string memory, uint256)
-    {
-        bytes32 byte_id = converttobytes(_id);
-        Certificate memory temp = certificates[byte_id];
-        require(temp.expiration_date != 0, "No such certificate exists");
-        return (temp.student_name, temp.org_name, temp.course_name, temp.expiration_date);
-    }
+        function verifyCertificate(string memory _id) public view returns(string memory)
+       {
+           bytes32 byte_id = converttobytes(_id);
+           Certificate memory temp = certificates[byte_id];
+           require(temp.expiration_date != 0, "No such certificate exists");
+           return ("Yes the certificate exists");
+       }
+        function getCertificate(string memory _id) public view returns(string memory, string memory, string memory, uint256)
+       {
+           bytes32 byte_id = converttobytes(_id);
+           Certificate memory temp = certificates[byte_id];
+           require(temp.expiration_date != 0, "No such certificate exists");
+           return (temp.student_name, temp.org_name, temp.course_name, temp.expiration_date);
+       }
 }
